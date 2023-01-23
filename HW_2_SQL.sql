@@ -29,7 +29,8 @@ values ('Nata Smolyak'), ('William Aaron Brooks'), ('Carlos Nathan Adams'), ('Ch
     
 create table salary (
 id serial primary key,
-monthly_salary int not null);
+monthly_salary int not null
+);
 																		   
 --  Вывод данных из таблицы Salary   
 select *from salary;
