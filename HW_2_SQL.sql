@@ -13,11 +13,11 @@ select *from employees;
 insert into employees (employee_name)
 values ('Nata Smolyak'), ('William Aaron Brooks'), ('Carlos Nathan Adams'), ('Charles Wyatt Russell'), ('Angel Jesse Watson'), ('Anthony Anthony Nelson'), 
 ('Landon Carter King'),('David Jayden Brown'),('Joshua Miguel Mitchell'),('Miguel Jose Howard'),('Ian Benjamin Wright'),('Jaden Gavin Butler'), ('Jacob Dominic Price'),
-('Ian Ethan Rogers'),('Caleb Matthew Wilson'),('Miguel Elijah Gonzales'),('Charles Ashton Lewis'),('Landon Eric Anderson'),('Dylan Jesse Thomas'),('Jake Christopher Butle('Kaitlyn Evelyn Carter'),
+('Ian Ethan Rogers'),('Caleb Matthew Wilson'),('Miguel Elijah Gonzales'),('Charles Ashton Lewis'),('Landon Eric Anderson'),('Dylan Jesse Thomas'),('Jake Christopher Butle), ('Kaitlyn Evelyn Carter'),
 ('Erin Allison Flores'), ('Anna Olivia Perez'), ('Alyssa Sierra Nelson'), ('Caroline Melanie Rodriguez'), ('Lillian Kaylee Hayes'), ('Faith Kaitlyn Mitchell'),
 ('Bailey Mia Lee'), ('Julia Sierra Jenkins'), ('Sydney Faith Cox'), ('Jessica Jordan Wright'), ('Megan Stephanie Sanders'), ('Stephanie Kaitlyn Morgan'),
 ('Chloe Jenna Green'), ('Vanessa Kaitlyn Campbell'), ('Sara Samantha Lee'),('Danielle Jada Walker'), ('Erin Sarah Price'), ('Natalie Elizabeth Jackson'),
-('Danielle Leah Johnson'),т ('Adam Carlos Williams'), ('Ryan Jake Patterson'), ('Ian Aidan Gonzales'), ('Isaac Jaden Clark'), ('Joshua Diego Moore'),
+('Danielle Leah Johnson'),('Adam Carlos Williams'), ('Ryan Jake Patterson'), ('Ian Aidan Gonzales'), ('Isaac Jaden Clark'), ('Joshua Diego Moore'),
 ('Seth Benjamin Thompson'), ('Jose Steven Gray'), ('Charles Adrian Green'), ('Caleb Cole Bailey'), ('Wyatt Ian Rogers'), ('Connor Gabriel Wood'),('Gabriel Jose Hughes'),
 ('Jayden Kevin Parker'), ('Amelia Marissa Ross'), ('Olivia Victoria Thompson'),('Rachel Ella Miller'),('Madison Brooke Murphy'),('Leslie Kaitlyn Williams'),
 ('Katherine Danielle Wood'),('Allison Maya Martin'),('Emily Mackenzie Walker'),('Aaliyah Leah Griffin'),('Sofia Julia Jenkins'),('Trinity Irea Scott'),('Vanessa Audrey Coleman'),
