@@ -28,19 +28,21 @@ values ('Nata Smolyak'), ('William Aaron Brooks'), ('Carlos Nathan Adams'), ('Ch
 --  monthly_salary. Int, not null
     
 create table salary (
-    id serial primary key,
-    monthly_salary int not null);
+id serial primary key,
+monthly_salary int not null);
+																		   
 --  Вывод данных из таблицы Salary   
 select *from salary;
   
 --  4. Наполнить таблицу salary 15 строками:
-   insert into salary (monthly_salary)
-   values (1000),(1100),(1200),(1300),(1400),(1500),(1600),(1700),(1800),(1900),(2000),(2100),(2200),(2300),(2400),(2500);
+insert into salary (monthly_salary)
+values (1000),(1100),(1200),(1300),(1400),(1500),(1600),(1700),(1800),(1900),(2000),(2100),(2200),(2300),(2400),(2500);
 																		   
 --  5.Создать таблицу employee_salary
 -- id. Serial  primary key,
 -- employee_id. Int, not null, unique
 -- salary_id. Int, not null
+																		   
 create table employee_salary (
 id serial primary key,
 employee_id int not null unique,
