@@ -10,14 +10,20 @@
 ---
 ### Некоторые упражнения с сайта https://sql-ex.ru/
 **Упражнение 1.** Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd.
-`SELECT model, speed, hd FROM PC
-WHERE price<500;`
+`
+SELECT model, speed, hd FROM PC
+WHERE price<500;
+`
 **Упражнение 2.** Найдите производителей принтеров. Вывести: maker.
-`SELECT DISTINCT maker FROM product
-WHERE type='Printer';`
+`
+SELECT DISTINCT maker FROM product
+WHERE type='Printer';
+`
 **Упражнение 3.** Найдите номер модели, объем памяти и размеры экранов ПК-блокнотов, цена которых превышает 1000 дол.
-`SELECT model, ram, screen FROM Laptop
-WHERE price > 1000;`
+`
+SELECT model, ram, screen FROM Laptop
+WHERE price > 1000;
+`
 
 
 
