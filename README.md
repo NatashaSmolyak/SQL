@@ -5,6 +5,8 @@
 ### Дальневосточный федеральный университет (ДВФУ), декабрь 2022 [Сертификат](https://drive.google.com/file/d/1MTX_HnqjswkfOXJbQ3I6VxIsd1Wk-x8C/view?usp=share_link)
 ---
 ### Задание 1. Базовые конструкции SQL. SELECT, WHERE, LIKE, OR, AND, BETWEEN, ORDER BY, GROUP BY MAX, MIN, COUNT. [Просмотр](https://github.com/NatashaSmolyak/SQL/blob/main/HW_1_SQL.sql)
-### Задание 2. DDL. CREATE, INSERT, UPDATE, ALTER, DELETE [Просмотр](https://github.com/NatashaSmolyak/SQL/blob/main/HW_2_SQL.sql)
-### Задание 3. JOINs. INNER JOIN, RIGHT JOIN, LEFT JOIN, FULL JOIN [Просмотр](https://github.com/NatashaSmolyak/SQL/blob/main/HW_3_SQL.sql)
-### Некторые упражения с сайта https://sql-ex.ru/
+### Задание 2. DDL. CREATE, INSERT, UPDATE, ALTER, DELETE. [Просмотр](https://github.com/NatashaSmolyak/SQL/blob/main/HW_2_SQL.sql)
+### Задание 3. JOINs. INNER JOIN, RIGHT JOIN, LEFT JOIN, FULL JOIN. [Просмотр](https://github.com/NatashaSmolyak/SQL/blob/main/HW_3_SQL.sql)
+---
+### Некоторые упражнения с сайта https://sql-ex.ru/
+***Упражнение 1.*** Найдите номер модели, скорость и размер жесткого диска для всех ПК стоимостью менее 500 дол. Вывести: model, speed и hd.
