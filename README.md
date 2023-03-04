@@ -103,8 +103,12 @@ SELECT HD from PC
 GROUP BY HD
 HAVING count(code)>=2;
 ```
-
-
+**Упражнение 16.** Найдите пары моделей PC, имеющих одинаковые скорость и RAM. В результате каждая пара указывается только один раз, т.е. (i,j), но не (j,i), Порядок вывода: модель с большим номером, модель с меньшим номером, скорость и RAM. 
+```
+SELECT DISTINCT A.model AS model_1, B.model AS model_2, A.speed, A.RAM
+FROM PC AS A, PC AS B
+WHERE A.speed = B.speed and A.RAM = B.RAM AND  A.model>B.model;
+```
 
 
 
