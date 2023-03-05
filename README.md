@@ -1,6 +1,7 @@
 ![image](https://github.com/NatashaSmolyak/SQL/blob/main/assets/SQL-header-image.png)
 ## 1. Интерактивный тренажер по SQL.
 ### Stepik, декабрь 2022 [Сертификат](https://stepik.org/cert/1871051)
+---
 ## 2. Курс повышения квалификации "Основы баз данных и SQL запросов".
 ### Дальневосточный федеральный университет (ДВФУ), декабрь 2022 [Сертификат](https://drive.google.com/file/d/1MTX_HnqjswkfOXJbQ3I6VxIsd1Wk-x8C/view?usp=share_link)
 ---
