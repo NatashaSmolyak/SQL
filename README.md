@@ -109,13 +109,21 @@ SELECT DISTINCT A.model AS model_1, B.model AS model_2, A.speed, A.RAM
 FROM PC AS A, PC AS B
 WHERE A.speed = B.speed and A.RAM = B.RAM AND  A.model>B.model;
 ```
-**Упражнение 17.**Найдите модели ПК-блокнотов, скорость которых меньше скорости каждого из ПК. Вывести: type, model, speed.
+**Упражнение 17.** Найдите модели ПК-блокнотов, скорость которых меньше скорости каждого из ПК. Вывести: type, model, speed.
 ```
 SELECT DISTINCT Product.type, Laptop.model, Laptop.speed FROM Laptop
 INNER JOIN Product ON Product.model=Laptop.model
 WHERE Laptop.speed < ALL (SELECT speed FROM PC);
 ```
-
+**Упражнение 18.** Найдите производителей самых дешевых цветных принтеров. Вывести: maker, price.
+```
+SELECT DISTINCT maker, price
+FROM printer INNER JOIN product
+ON printer.model = product.model
+WHERE (color = 'y')
+AND price = (SELECT MIN(price)
+FROM printer WHERE color = 'y');
+```
 
 
 
