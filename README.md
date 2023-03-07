@@ -132,7 +132,13 @@ SELECT maker, avg(screen) from Product
 INNER JOIN Laptop ON Product.model=Laptop.model
 GROUP BY maker;
 ```
-
+**Упражнение 20.** Найдите производителей, выпускающих по меньшей мере три различных модели ПК. Вывести: Maker, число моделей ПК.
+```
+SELECT maker, count (model) FROM Product
+WHERE type ='PC'
+GROUP BY maker
+HAVING count (model)>=3
+```
 
 
 
