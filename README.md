@@ -139,6 +139,13 @@ WHERE type ='PC'
 GROUP BY maker
 HAVING count (model)>=3
 ```
+**Упражнение 21.** Найдите максимальную цену ПК, выпускаемых каждым производителем, у которого есть модели в таблице PC. Вывести: maker, максимальная цена.
+```
+SELECT maker, max (price) FROM product
+INNER JOIN PC ON product.model=pc.model
+GROUP BY maker;
+```
+
 
 
 
