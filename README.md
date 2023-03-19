@@ -145,7 +145,16 @@ SELECT maker, max (price) FROM product
 INNER JOIN PC ON product.model=pc.model
 GROUP BY maker;
 ```
-
+**Упражнение 22.**  Найдите производителей, которые производили бы как ПК со скоростью не менее 750 МГц, так и ПК-блокноты со скоростью не менее 750 МГц. Вывести: Maker.
+```
+SELECT maker from product
+INNER JOIN PC ON product.model=PC.model
+WHERE pc.speed >=750
+INTERSECT
+SELECT maker from product
+INNER JOIN Laptop ON product.model=Laptop.model
+WHERE laptop.speed >=750
+```
 
 
 
