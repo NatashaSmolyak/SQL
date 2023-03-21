@@ -137,7 +137,7 @@ GROUP BY maker;
 SELECT maker, count (model) FROM Product
 WHERE type ='PC'
 GROUP BY maker
-HAVING count (model)>=3
+HAVING count (model)>=3;
 ```
 **Упражнение 21.** Найдите максимальную цену ПК, выпускаемых каждым производителем, у которого есть модели в таблице PC. Вывести: maker, максимальная цена.
 ```
@@ -160,6 +160,20 @@ INTERSECT
 SELECT maker from product
 INNER JOIN Laptop ON product.model=Laptop.model
 WHERE laptop.speed >=750;
+```
+**Упражнение 24.** Перечислите номера моделей любых типов, имеющих самую высокую цену по всей имеющейся в базе данных продукции.
+```
+SELECT model FROM ( 
+SELECT model, price FROM PC
+UNION
+SELECT model, price from Laptop
+UNION
+SELECT model, price from Printer) X
+WHERE price = (SELECT max(price) from (SELECT price FROM PC
+                   UNION
+                   SELECT price from Laptop
+                   UNION
+                   SELECT price from Printer) AS A );     
 ```
 
 
