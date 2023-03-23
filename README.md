@@ -186,7 +186,7 @@ WHERE ram = (SELECT min(RAM) FROM PC))) and
 maker IN(SELECT maker FROM Product 
 WHERE model IN(SELECT model FROM PC 
 WHERE speed = (SELECT MAX(speed) FROM (SELECT speed FROM PC 
-WHERE ram=(SELECT MIN(ram) FROM PC)) AS MAX_SPEED )))
+WHERE ram=(SELECT MIN(ram) FROM PC)) AS MAX_SPEED )));
 ```
 **Упражнение 26.** Найдите среднюю цену ПК и ПК-блокнотов, выпущенных производителем A (латинская буква). Вывести: одна общая средняя цена.
 ```
@@ -196,6 +196,6 @@ WHERE maker='A'
 UNION ALL
 SELECT price FROM Laptop
 INNER JOIN Product ON Product.model=Laptop.model
-WHERE maker='A') AS Table_A
+WHERE maker='A') AS Table_A;
 ```
 
