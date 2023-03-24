@@ -198,4 +198,12 @@ SELECT price FROM Laptop
 INNER JOIN Product ON Product.model=Laptop.model
 WHERE maker='A') AS Table_A;
 ```
-
+**Упражнение 27.** Найдите средний размер диска ПК каждого из тех производителей, которые выпускают и принтеры. Вывести: maker, средний размер HD.
+```
+SELECT maker, AVG(hd) 
+FROM (SELECT hd, maker
+      FROM PC INNER JOIN 
+      Product ON PC.model = Product.model
+      WHERE maker IN (SELECT maker FROM Product where type='printer')) AS table_A  
+GROUP BY maker;
+```
