@@ -207,3 +207,12 @@ FROM (SELECT hd, maker
       WHERE maker IN (SELECT maker FROM Product where type='printer')) AS table_A  
 GROUP BY maker;
 ```
+**Упражнение 28.** Используя таблицу Product, определить количество производителей, выпускающих по одной модели.
+```
+SELECT count(maker)
+FROM product
+WHERE maker in (
+SELECT maker from product
+GROUP by maker
+HAVING count(model) = 1);
+```
