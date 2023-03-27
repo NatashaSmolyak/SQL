@@ -216,3 +216,11 @@ SELECT maker from product
 GROUP by maker
 HAVING count(model) = 1);
 ```
+**Упражнение 29.** В предположении, что приход и расход денег на каждом пункте приема фиксируется не чаще одного раза в день [т.е. первичный ключ (пункт, дата)], написать запрос с выходными данными (пункт, дата, приход, расход). Использовать таблицы Income_o и Outcome_o.
+```
+SELECT Income_o.point, Income_o.date, Income_o.inc, Outcome_o.out
+FROM Income_o LEFT JOIN Outcome_o ON (Income_o.date = Outcome_o.date) AND (Income_o.point = Outcome_o.point)
+UNION
+SELECT Outcome_o.point, Outcome_o.date, Income_o.inc, Outcome_o.out
+FROM Income_o RIGHT JOIN Outcome_o ON (Income_o.date = Outcome_o.date) AND (Income_o.point = Outcome_o.point)
+```
